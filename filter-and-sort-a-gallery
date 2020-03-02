@@ -1,0 +1,17 @@
+https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/add-gallery#filter-and-sort-a-gallery
+Sort
+    (If
+        (IsBlank(TextSearchBox1.Text),
+        FlooringEstimates,
+        Filter(
+            FlooringEstimates,
+            TextSearchBox1.Text in Text(Name)
+        )
+    ),
+    Name,
+    If(
+        SortDescending1,
+        SortOrder.Descending,
+        SortOrder.Ascending
+    )
+)
