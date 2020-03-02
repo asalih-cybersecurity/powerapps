@@ -15,3 +15,6 @@ Sort
         SortOrder.Ascending
     )
 )
+************************ANOTHER WAY******************************
+Items Property of the Gallery: search(datasource, search-text, Column-name)
+>> Sreach-text: can be a textbox where user can enter the search word!
